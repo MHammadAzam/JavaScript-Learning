@@ -9,7 +9,7 @@
 // number(2 to power 53), null, string, symbol(uniqueness), boolean, bigint, undefined  (nnssbbu)
 
 // 2. Non-Primitive Data Types
-// objects (arrays, functions, dates)
+// objects (arrays, functions)
 
 console.log(typeof "hammad"); // string data type
 console.log(typeof 34); // number data type

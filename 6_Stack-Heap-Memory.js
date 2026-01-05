@@ -1,7 +1,6 @@
 // Stack (Primitive), Heap (Non-Primitive)
 // stack stores values as copies, heap stores values as references (original values)
 
-
 // bcz in stack only copies are given to variables so orginal value remains unchanged
 let myYt = "hammadYt"; // stored in stack
 let anotherYt = myYt; // anotherYt gets a copy of myYt value
