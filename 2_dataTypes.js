@@ -20,5 +20,8 @@ console.log(typeof null); // object data type (bug in js)
 console.log(typeof 9007199254741991n); // bigint data type
 console.log(typeof Symbol("hammad")); // symbol data type
 
+let bigNumber = 9007199254741991n;
+console.log(typeof bigNumber) // 
+
 
 
