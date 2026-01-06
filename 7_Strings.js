@@ -20,8 +20,11 @@ console.log(newString) // output: pub, substring from index 0 to 3 (excluding 3)
 const sliceString = gameName.slice(0, 3) // method to get slice from string, 
 console.log(sliceString) // output: pub, slice from index 0 to 3 (excluding 3)
 
+
 const trimming = "    hammad    "
 console.log(trimming.trim()) // method to remove whitespace from both ends of string
 
 const replacing = "www.hammad.com"
 console.log(replacing.replace("hammad", "ali")) // method to replace substring with another substring
+
+console.log(replacing.concat("/home")) // output: www.hammad.com/home
