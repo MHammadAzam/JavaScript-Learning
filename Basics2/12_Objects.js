@@ -40,4 +40,4 @@ user.greeting = function(){
 user.greetingTwo = function(){
   console.log(`Hello brotha, ${this.name}, ${this.email}`)
 }
-console.log(user.greetingTwo())
+console.log(user.greetingTwo()) // Hello brotha, azam,
