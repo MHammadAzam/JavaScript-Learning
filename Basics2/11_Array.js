@@ -33,66 +33,6 @@ console.log(Array.of(score1, score2, score3)) // also converts this to an array
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // myArr.forEach((item, index) => {
 //     console.log(index, item);
 // });
