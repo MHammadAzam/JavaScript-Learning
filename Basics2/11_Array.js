@@ -1,6 +1,3 @@
-
-console.log("hello")
-
 const marvel_heroes = ["thor", "ironman", "spiderman"]
 const dc_heroes = ["superman", "flash", "batman"]
 
@@ -9,20 +6,31 @@ const dc_heroes = ["superman", "flash", "batman"]
 
 // (1) 
 const concating = marvel_heroes.concat(dc_heroes)
-console.log(concating) // it merges properly
+// console.log(concating) // it merges properly
 
-// (2)
+// (2) Spread Operator
 const all_NewHeroes = [...marvel_heroes, ...dc_heroes]
 console.log(all_NewHeroes) // most used way to combine 2 arrays.
 
 // (3)
 const another_Array = [1, 2, 3, [4,5,6], 7 , [8,9, [10,11,12]]] // in this case use flat
 const real_Array = another_Array.flat(Infinity) //flat is used to make all arrays elements into one single array
-console.log(real_Array)
+// console.log(real_Array)
 
 // (4) To check whether anything u enterd is array or not and also you can convert to array
 console.log(Array.isArray("Hammad")) // it will check and give value in true or false
 console.log(Array.from("Hammad")) // it will convert this string into an array
+// Below one is for interviews
+console.log(Array.from({name: "hammad"})) // it will print empty because it can directly convert the object
+
+let score1 = 100
+let score2 = 200
+let score3 = 300
+console.log(Array.of(score1, score2, score3)) // also converts this to an array
+
+
+
+
 
 
 
