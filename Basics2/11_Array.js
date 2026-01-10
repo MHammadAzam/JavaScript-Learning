@@ -20,6 +20,10 @@ const another_Array = [1, 2, 3, [4,5,6], 7 , [8,9, [10,11,12]]] // in this case 
 const real_Array = another_Array.flat(Infinity) //flat is used to make all arrays elements into one single array
 console.log(real_Array)
 
+// (4) To check whether anything u enterd is array or not and also you can convert to array
+console.log(Array.isArray("Hammad")) // it will check and give value in true or false
+console.log(Array.from("Hammad")) // it will convert this string into an array
+
 
 
 
