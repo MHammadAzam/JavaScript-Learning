@@ -15,6 +15,11 @@ console.log(concating) // it merges properly
 const all_NewHeroes = [...marvel_heroes, ...dc_heroes]
 console.log(all_NewHeroes) // most used way to combine 2 arrays.
 
+// (3)
+const another_Array = [1, 2, 3, [4,5,6], 7 , [8,9, [10,11,12]]] // in this case use flat
+const real_Array = another_Array.flat(Infinity) //flat is used to make all arrays elements into one single array
+console.log(real_Array)
+
 
 
 
