@@ -36,7 +36,7 @@ let booleanIsLoggedIn = Boolean(isLoggedIn);
 
 
 // converting everything using String.
-let number = 33
+let number = undefined
 let stringNumber = String(number);
 // console.log(stringNumber)
 

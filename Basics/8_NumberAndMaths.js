@@ -39,4 +39,4 @@ const min = 10;
 const max = 20;
 
 console.log(Math.floor(Math.random() * (max - min + 1)) + min); // random integer between 10 and 20
-// math.random gives us value between 0 and 1 , which will be in points like 0.1,0.5, so we applied math.floor to convert it to just 0, but now we need our value to be atleast start from 10 so we add min, and then we gave a range inn which we wanted our value that is: min - max
+// math.random gives us value between 0 and 1 , which will be in points like 0.1,0.5, so we applied math.floor to convert it to just 0, but now we need our value to be atleast start from 10 so we add min, and then we gave a range inn which we wanted our value that is: max - min
