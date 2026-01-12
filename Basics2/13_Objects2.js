@@ -50,5 +50,19 @@ console.log(tinderUser)
 console.log(Object.keys(tinderUser)) // ye sare keys ko ek array me convert kr dega, VERYYYY IMPORTANTTTTTTT
 console.log(Object.values(tinderUser)) // ye sare values ko ek array me convert kr dega, VERYYYY IMPORTANTTTTTTT
 console.log(Object.entries(tinderUser)) // ye keys and values dono ko ek array of arrays me convert kr dega, VERYYYY IMPORTANTTTTTTT
+console.log(tinderUser.hasOwnProperty("email")) // ye check krta hai k email property tinderUser me hai ya nhi, true or false me dega
+
+// OBJECT DESTRUCTURING
+const course = {
+  courseName: "Javascript",
+  price: "999",
+  courseInstructor: "HITESH CHAUDHARY"
+}
+// console.log(course.courseName)
+// console.log(course["courseName"])
+// const {courseName: Course} = course // so you can also rename while destructuring
+// console.log(Course)
+const {courseName, price, courseInstructor} = course // object destructuring
+console.log(courseName, price, courseInstructor)
 
 
