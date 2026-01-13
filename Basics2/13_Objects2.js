@@ -26,7 +26,7 @@ const obj2 = { 4: "d", 5: "e", 6: "f" }
 const obj3 = Object.assign({},obj1, obj2) // ye sb ek object me merge kr dega, {} start mai as a target use hota hai so dono arrays is  empty object me chalay jayengay, but agar apne {} na diya to pehla object target ban jata hai aur usme hi sab merge ho jata hai.
 // console.log(obj3)
 
-// WE WILL USE MOSTLY THE BELOW METHOD
+// WE WILL USE MOSTLY THE BELOW METHOD, Spread Operator
 const obj5 = {...obj1, ...obj2} // ye bhi sb ek object me merge kr dega
 // console.log(obj5)
 
