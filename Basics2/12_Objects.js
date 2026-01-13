@@ -36,9 +36,10 @@ user.greeting = function(){
   console.log("hello brothaa")
 }
 // console.log(user.greeting) // [Function (anonymous)], function wont execute just it will give function(anonymous)
-// console.log(user.greeting()) // it will print the value as it is a method so u have to use ()
+console.log(user.greeting()) // it will print the value as it is a method so u have to use ()
 
 user.greetingTwo = function(){
   console.log(`Hello brotha, ${this.name}, ${this.email}`)
 }
 console.log(user.greetingTwo()) // Hello brotha, azam,
+console.log(user)

@@ -20,6 +20,7 @@ const regularUser = {
 }
 // console.log(regularUser.fullName.userFullName.firstName)
 
+// TO MERGE TWO OBJECTS
 const obj1 = { 1: "a", 2: "b",  3: "c" } 
 const obj2 = { 4: "d", 5: "e", 6: "f" } 
 
@@ -50,7 +51,7 @@ console.log(tinderUser)
 console.log(Object.keys(tinderUser)) // ye sare keys ko ek array me convert kr dega, VERYYYY IMPORTANTTTTTTT
 console.log(Object.values(tinderUser)) // ye sare values ko ek array me convert kr dega, VERYYYY IMPORTANTTTTTTT
 console.log(Object.entries(tinderUser)) // ye keys and values dono ko ek array of arrays me convert kr dega, VERYYYY IMPORTANTTTTTTT
-console.log(tinderUser.hasOwnProperty("email")) // ye check krta hai k email property tinderUser me hai ya nhi, true or false me dega
+console.log(tinderUser.hasOwnProperty("email")) // ye check krta hai ke property tinderUser me hai ya nhi, true or false me dega
 
 // OBJECT DESTRUCTURING
 const course = {
