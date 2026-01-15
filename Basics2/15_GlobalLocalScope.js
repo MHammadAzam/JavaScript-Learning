@@ -17,3 +17,43 @@ if (true){
 // console.log(b) ... this will also give error because 'b' is defined using 'const' inside the block scope
 console.log(c) // ... this will work beacause 'c' is defined using 'var' whhich is function scoped or globally scoped
 // 'var' is not block scoped, it is either function scoped or globally scoped
+
+
+
+// 1--- NESTED FUNCTIONS, child can access parent but parent cant access child.
+function one(){
+     const username = "hammad"
+
+       function two(){
+          const website = "learncodeonline.in"
+          console.log(username);
+       }
+     //   console.log(website); // this will give error because 'website' is defined inside function 'two' and is not accessible outside it.
+       two()
+     }
+one()
+
+// 2--- NESTED IF BLOCKS, child can access parent but parent cant access child.
+if(true){
+     const username = "hammad"
+     if(username === "hammad"){
+          const website = "learncodeonline.in"
+          console.log(username + website);
+     }
+     // console.log(website); // this will give error because 'website' is defined inside inner if block and is not accessible outside it.
+}
+// console.log(username)
+
+
+// ************************ INTERESTING EXAMPLE ********************************************
+
+console.log(addone(5) ) // in this case you can get the output 6 because of function hoisting
+function addone(num){
+      return num + 1
+}
+
+
+console.log(addTwo(5)) // in this case you will get error because function expression is not hoisted
+const addTwo = function(num){
+      return num + 2
+}
