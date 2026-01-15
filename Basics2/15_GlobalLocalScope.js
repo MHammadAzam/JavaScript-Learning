@@ -12,6 +12,7 @@ if (true){
      const b = 20
      var c = 30
 }
+//
 
 // console.log(a) ... so this will give error because 'a' is defined using 'let' inside the block scope
 // console.log(b) ... this will also give error because 'b' is defined using 'const' inside the block scope
