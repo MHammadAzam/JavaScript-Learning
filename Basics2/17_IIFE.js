@@ -1,0 +1,14 @@
+
+// IMEDIATELY INVOKED FUNCTION EXPRESSION ( IIFE )
+
+// GLOBAL SCOPE KAI POLLUTION SE PROBLEM HOTI HAI KAYI BAAR , THO US GLOBAL SCOPE KAI JO VARIABLES HAI, USKE POLLUTION KO HATANE KAI LIYE IIFE KO USE KRTE HAIN
+
+// 1-- THIS IS NAMED IIFE
+(function chai(){
+    console.log("hammadAzam")
+})();
+
+// 2-- THIS IS NORMAL IIFE
+( (name) => {
+    console.log(`azam ${name}`)
+})("hammad")
