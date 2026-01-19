@@ -1,3 +1,7 @@
+// TRUTHY VALUES : 
+// FALSY VALUES : 
+
+
 // 1) IF STATEMENT
 // condition inside the if should be true, after that the code will be executed .
 // <, >, <=, >=, !, !=, !==, ==, ===
@@ -47,5 +51,25 @@ if(LoggedFromEmail || LoggedFromGoogle){
      console.log("User logged In");
 }
 
+//  ************************** SWITCH CASE ***********************************************
 
- 
+const month = 3
+switch(month){
+     case 1:
+       console.log("January")
+       break;
+     case 2:
+       console.log("February")
+       break;
+     case 3:
+      console.log("March")
+      break;
+     case 4:
+      console.log("April")
+      break;
+
+      default:
+        console.log("Default Case")
+        break;
+
+}
