@@ -1,6 +1,17 @@
-// TRUTHY VALUES : 
-// FALSY VALUES : 
+// TRUTHY VALUES : false, 0, -0, "" , bigInt 0n, null, undefined, NaN
+// FALSY VALUES :  true, 1, [], {}, "0", "false", " ", function(){}, 
 
+// NULLISH COALESCING OPERATOR (??):    NULL, UNDEFINED
+let val1;
+val1 = 5 ?? 10
+val1 = null ?? 50 // it is used for safety check it will ignore null value
+val1 = undefined ?? 20 // it is used for safety check it will ignore undefined value
+console.log(val1)
+
+// TERNARY OPERATOR:
+// condition ? true : false
+const iceTeaPrice  = 100
+iceTeaPrice >= 80 ? console.log("less than 80") : console.log("Greater than 80")
 
 // 1) IF STATEMENT
 // condition inside the if should be true, after that the code will be executed .
