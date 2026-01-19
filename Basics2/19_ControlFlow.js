@@ -34,7 +34,17 @@ else{
  }
 
 
+ // 3) checking multiple values inside the IF condition.
  const userLoggedIn = true
  const debitCard = true
- 
+ const LoggedFromEmail = false
+ const LoggedFromGoogle = true
+
+ if(userLoggedIn && debitCard){
+       console.log("Allow user to purchase item")
+ }
+if(LoggedFromEmail || LoggedFromGoogle){
+     console.log("User logged In");
+}
+
  
