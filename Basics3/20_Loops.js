@@ -27,9 +27,17 @@ for(let i = 1; i<=10; i++){
 // 3: LOOP ON ARRAYS
 let myArray = ["flash", "batman", "superman", "King", "Bot", "Naruto"] // 6
 
-for(let i = 0 ; i<=myArray.length; i++){
+for(let i = 0 ; i < myArray.length; i++){
     console.log(myArray[i])
 }
 
 
-// 
+// 4: BREAK AND CONTINUE
+for (let index = 1; index <= 20; index++) {
+  if(index == 5){
+    // break , it will terminate the loop at this stage
+    continue  // it will just skip this stage and continue to show other further values
+  }
+  console.log(`Value of i is ${index}`) // prints value from 1 to 20
+  
+}
