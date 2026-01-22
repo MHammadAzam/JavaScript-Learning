@@ -1,5 +1,5 @@
-// TRUTHY VALUES : false, 0, -0, "" , bigInt 0n, null, undefined, NaN
-// FALSY VALUES :  true, 1, [], {}, "0", "false", " ", function(){}, 
+// FALSY VALUES : false, 0, -0, "" , bigInt 0n, null, undefined, NaN
+// TRUTHY VALUES :  true, 1, [], {}, "0", "false", " ", function(){}, 
 
 // NULLISH COALESCING OPERATOR (??):    NULL, UNDEFINED
 let val1;
