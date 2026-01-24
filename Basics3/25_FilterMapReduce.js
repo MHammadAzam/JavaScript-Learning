@@ -1,7 +1,7 @@
 const coding = ["Js", "Ruby", "Python", "Java", "Flutter", "React"]
 const values = coding.forEach((item)=>{
      console.log(item)
-     return item // still will return undefined
+     return item // still it will return undefined
 })
 // console.log(values)  // it returns undefined, even if you type return keyword inside ForEach
 
