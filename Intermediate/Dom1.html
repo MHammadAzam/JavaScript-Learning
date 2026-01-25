@@ -1,13 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DOM MANIPULATION</title>
-  </head>
-
-  <body>
-  <!-- we have firstly Window model, inside it is document, inside that document is HTML, inside html is head and body, inside head is title and meta, then inside title is textNode, inside meta isjust attribute, inside body is div node, inside div is attribute,  h1 and p, inside h1 is textNode, inside p is also a textNode -->
+<!-- we have firstly Window model, inside it is document, inside that document is HTML, inside html is head and body, inside head is title and meta, then inside title is textNode, inside meta isjust attribute, inside body is div node, inside div is attribute,  h1 and p, inside h1 is textNode, inside p is also a textNode -->
 
   <!-- 
     WINDOW
@@ -26,10 +17,50 @@
              P
               TEXTNODE
   -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM MANIPULATION</title>
+    <style>
+      .bg-black{
+        background-color: #212121;
+        color: white;
+      }
+    </style>
+  </head>
 
-    <div class="bg-black">
-      <h1>DOM- DOCUMENT OBJECT MODEL</h1>
+  <body class="bg-black">
+    <div>
+      <h1 class="heading" id="title">DOM- DOCUMENT OBJECT MODEL <span style="display: none;">TEST TEXT</span></h1>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat illo, blanditiis quo deserunt esse quod. Dolorem, sed. Minus, vero reprehenderit corporis facilis architecto, tempore omnis soluta aut culpa, nobis sunt.</p>
+      <input type="password" name="" id="">
     </div>
+
+    <script>
+     document.getElementById("title")
+
+     document.getElementsByClassName("title") // this gives us an HTML collection e.g if we have created 4 li items inside html then, and also it doesnt contains forEach loop, now to apply any looping properties on it convert it into an array, so to convert , use   Array.from()
+
+
+     document.querySelector("h1") // it will just give us first h1 present on the page
+     document.querySelector("#title")  // to select exact element using its id
+     document.querySelector(".heading") // to select exact element using its className
+     document.querySelector("input[type='password']") // to select an input field
+
+     document.querySelectorAll("h1") // it will give us all the h1 present on the page , it gives a NodeList, also we can just apply a forEach loop on it
+
+
+     document.getElementById('title').getAttribute('class')
+     document.getElementById('title').setAttribute('class', 'test heading') // it will overwrite the value of class and change it with test.
+     document.getElementById("title").innerText // this property shows just those values which are visible on page not hidden values
+     document.getElementById("title").textContent // this shows all text present in an element even if display none text
+     document.getElementById("title").inneHTML // it will give even the span tag along with its content 
+
+     document.getElementByClassName('heading').style.backgroundColor = 'red'
+     document.getElementByClassName('heading').style.margin = '20px'
+     
+    </script>
   </body>
 </html>
