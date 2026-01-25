@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM MANIPULATION</title>
+</head>
+<body style="background-color: #212121; color: white;">
+   <div class="parent">
+       <div class="day">Monday</div>
+       <div class="day">Tuesday</div>
+       <div class="day">Wednesday</div>
+       <div class="day">Thursday</div>
+   </div>
+   <script>
+   const parent = document.querySelector('.parent')
+   console.log(parent)
+   console.log(parent.children) // HTML Collection
+   console.log(parent.children[1].innerHTML)
+
+   for (let i = 0; i < parent.children.length; i++) {
+    const element = parent.children[i].innerHTML;
+    console.log(element)
+   }
+   parent.children[1].style.backgroundColor = 'red'
+   parent.children[1].style.padding = '10px'
+
+   console.log(parent.firstElementChild) // gives first child
+   console.log(parent.lastElementChild) // gives last child of parent
+
+   const day = document.querySelector('.day')// will give just first one
+   console.log(day)
+   console.log(day.parentElement) // to access the parent
+   console.log(day.nextElementSibling) // to its next sibling
+
+   console.log("Nodes:", parent.childNodes); // it will give a node list, which will contains text nodes and the divs, even you have given the line break in above parent div, it will also be counted as a seperate nodelist item
+   
+   </script>
+</body>
+</html>
