@@ -1,4 +1,3 @@
-
 // SINGLETON, constructor se jo banega wo singleton hoga , basic jo ham literals banate hai usse nhi bantaa.
 // const tinderUser = new Object() // SINGLETON OBJECT
 // object.create, through this singleton can be created

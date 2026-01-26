@@ -14,6 +14,7 @@ console.log(gameName.charAt(1)) // method to get character at specific index
 console.log(gameName.indexOf("b")) // method to get index of specific character
 console.log(gameName.includes("pub")) // method to check if substring is present in string
 
+
 const newString = gameName.substring(0, 3) // method to get substring from string
 console.log(newString) // output: pub, substring from index 0 to 3 (excluding 3)
 

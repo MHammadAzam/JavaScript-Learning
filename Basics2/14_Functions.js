@@ -1,6 +1,4 @@
-
 // make the code simpler and shorter using functions and also avoids repetition
-
 
 // 1... Without Parameters and Without Return Type
 function myName(){
