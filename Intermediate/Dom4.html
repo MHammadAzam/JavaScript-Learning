@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: white;">
+  
+  <!-- HOW TO EDIT AND REMOVE ELEMENTS IN DOM -->
+   <ul class="language">
+      <li>JavaScript</li>
+   </ul>
+
+   </body>
+   <script>
+        function addLanguage(langName){
+              const li = document.createElement("li");
+              li.innerHTML = `${langName}`
+              document.querySelector('.language').appendChild(li)
+        }
+        addLanguage('python')
+        addLanguage('Node js')
+        addLanguage('Mongo DB')
+
+
+// 2) optimized way bcz you dont have to traverse the whole tree just simply u have created a text node and inserted in it
+      function addLanguage2(langName){
+           const li = document.createElement('li')
+           li.appendChild(document.createTextNode(langName))
+          document.querySelector('.language').appendChild(li)
+
+      }
+      addLanguage2("Express js")
+
+
+// HOW TO EDIT ANY ELEMENT
+const secondLang = document.querySelector('li:nth-child(2)')
+// secondLang.innerHTML = 'jQuery'
+const newLi = document.createElement('li')
+newLi.textContent = 'mojo'
+secondLang.replaceWith(newLi)
+
+// EDIT
+const firstLang = document.querySelector('li:first-child')
+firstLang.outerHTML = '<li>TypeScript</li>'
+
+// DELETE or REMOVE
+const lastLang = document.querySelector('li:last-child')
+lastLang.remove()
+
+   </script>
+</html>
