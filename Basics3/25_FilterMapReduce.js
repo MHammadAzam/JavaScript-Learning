@@ -34,8 +34,7 @@ const newNums = myNumbers
                .map((num)=> num * 10 )
                .map((num)=> num + 2) // here num value will start from 10, beacause of the above map condition
                .filter((num)=> num > 60)
-console.log(newNums)
-
+console.log(newNums) // will print these new values
 
 
 // REDUCE METHOD : ACCUMULATOR(INITIAL VALUE), CURRENT VALUE

@@ -48,3 +48,9 @@ const myObj = {
 for (const [key, value] of myObj) {
      console.log(key, value) // will show error objects not iteratable just like the maps, it can be iterated using ForIn loop
 }
+
+
+
+
+
+
